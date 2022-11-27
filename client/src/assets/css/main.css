@@ -1,0 +1,135 @@
+body {
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(280.48deg,#ffece6 7.8%,#fff 97.57%);
+    /*background-image: url("../image/background-icons.svg");*/
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.button:active, .button.is-active {
+    border: none !important;
+    color: #363636;
+}
+
+.button:focus, .button.is-focused {
+    border: none !important;
+    color: #363636;
+}
+.button:hover, .button.is-hovered {
+    border: none !important;
+    color: #363636;
+}
+
+.button:focus:not(:active), .button.is-focused:not(:active) {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+a:hover {
+    opacity: .5;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: #9d9d9d;;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.collapse .collapse-trigger {
+    display: block !important;
+    text-align: center !important;
+}
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 5px 15px 100px 15px;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.button{
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 6px 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.button-orange{
+    background: linear-gradient(116.15deg,#FF9269,#FF4500);
+    color: #ffffff;
+}
+
+.button-orange:hover:enabled{
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.button-orange:hover:disabled{
+    color: #ffffff;
+}
+
+.block__border {
+    border-bottom: 1px solid #FF4500;
+    height: 5px;
+    width: 600px;
+}
+
+.header-text-clear{
+    display: none;
+}
+
+.header-text-block{
+    display: block;
+}
+
+.header-clear{
+
+}
+
+
+@media only screen and (max-width: 1005px) {
+    .block__border {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .button {
+        font-size: 24px;
+    }
+}

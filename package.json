@@ -1,0 +1,31 @@
+{
+  "name": "photo-fit",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix --stream",
+    "build": "lerna run build --stream",
+    "build:client": "lerna run build --scope=client --stream",
+    "build:server": "lerna run build --scope=server --stream",
+    "start": "lerna run start --scope=server --stream"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "lint-staged": "^11.2.6"
+  },
+  "workspaces": {
+    "packages": [
+      "client",
+      "server"
+    ],
+    "nohoist": [
+      "**/@types",
+      "**/@types/**"
+    ]
+  },
+  "dependencies": {
+    "yarn": "^1.22.17"
+  }
+}
