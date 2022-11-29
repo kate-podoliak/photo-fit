@@ -10,256 +10,256 @@
              :label-position="labelPosition"
              :mobile-mode="mobileMode">
       <b-step-item step="1" :clickable="isStepsClickable">
-        <h3 class="main__header">Начнём!</h3>
-        <p class="main__question">Выберите пол</p>
+        <h3 class="main__header">Let's start!</h3>
+        <p class="main__question">Choose gender</p>
         <div class="main__buttons">
           <label class="checkbox">
             <input id="gender-female" v-model="genderModel" class="checkbox__input" type="radio" name="gender"
-                   value="женский"
+                   value="female"
                    @click="clickButtonNext"/>
             <span class="checkbox__icon">
-                          <img src="../assets/image/gender-female.svg" alt="Женский"/>
+                          <img src="../assets/image/gender-female.svg" alt="Female"/>
                         </span>
-            <p class="checkbox__label">Женский</p>
+            <p class="checkbox__label">Female</p>
           </label>
           <label class="checkbox">
             <input id="gender-male" v-model="genderModel" class="checkbox__input" type="radio" name="gender"
-                   value="мужской"
+                   value="male"
                    @click="clickButtonNext"/>
             <span class="checkbox__icon">
-                          <img src="../assets/image/gender-male.svg" alt="Мужской"/>
+                          <img src="../assets/image/gender-male.svg" alt="Male"/>
                         </span>
-            <p class="checkbox__label">Мужской</p>
+            <p class="checkbox__label">Male</p>
           </label>
         </div>
       </b-step-item>
       <b-step-item step="2" :clickable="isStepsClickable">
         <div class="main__top">
-          <h3 class="main__header">Белок</h3>
+          <h3 class="main__header">Protein</h3>
           <div class="header__steps">
             <span class="active-step">{{ activeStep + 1 }}</span>
             <span>/{{ totalItems }}</span>
           </div>
         </div>
-        <p class="main__question">Едите ли вы мясо?</p>
+        <p class="main__question">Do you eat meat?</p>
         <div class="main__buttons">
           <label class="checkbox">
-            <input id="option-meat" v-model="meatModel" class="checkbox__input" type="radio" name="meat" value="мясо"
+            <input id="option-meat" v-model="meatModel" class="checkbox__input" type="radio" name="meat" value="meat"
                    @click="clickButtonNext"/>
             <span class="checkbox__icon">
-                        <img src="../assets/image/eat-meat.svg" alt="Мясо"/>
+                        <img src="../assets/image/eat-meat.svg" alt="Meat"/>
                       </span>
-            <p class="checkbox__label">Я ем мясо</p>
+            <p class="checkbox__label">I eat meat</p>
           </label>
           <label class="checkbox">
             <input id="option-vegan" v-model="meatModel" class="checkbox__input" type="radio" name="meat"
-                   value="вегетарианец"
+                   value="vegetarian"
                    @click="clickButtonNext"/>
             <span class="checkbox__icon">
-                        <img src="../assets/image/eat-vegan.svg" alt="Вегетарианец"/>
+                        <img src="../assets/image/eat-vegan.svg" alt="Vegetarian"/>
                       </span>
-            <p class="checkbox__label">Я вегетарианец</p>
+            <p class="checkbox__label">I am a vegetarian</p>
           </label>
         </div>
       </b-step-item>
       <b-step-item step="3" :clickable="isStepsClickable">
         <div class="main__top">
-          <h3 class="main__header">Молочные продукты</h3>
+          <h3 class="main__header">Dairy</h3>
           <div class="header__steps">
             <span class="active-step">{{ activeStep + 1 }}</span>
             <span>/{{ totalItems }}</span>
           </div>
         </div>
-        <p class="main__question">Как вы относитесь к молочным продуктам?</p>
+        <p class="main__question">How do you feel about dairy products?</p>
         <div class="main__buttons">
           <label class="checkbox">
-            <input id="option-milk" v-model="milkModel" class="checkbox__input" type="radio" name="milk" value="молоко"
+            <input id="option-milk" v-model="milkModel" class="checkbox__input" type="radio" name="milk" value="milk"
                    @click="clickButtonNext"/>
             <span class="checkbox__icon">
-                        <img src="../assets/image/milk.svg" alt="Молоко"/>
+                        <img src="../assets/image/milk.svg" alt="Milk"/>
                       </span>
-            <p class="checkbox__label">Употребляю</p>
+            <p class="checkbox__label">I use</p>
           </label>
           <label class="checkbox">
             <input id="option-no-milk" v-model="milkModel" class="checkbox__input" type="radio" name="milk"
-                   value="без молока"
+                   value="nomilk"
                    @click="clickButtonNext"/>
             <span class="checkbox__icon">
-                        <img src="../assets/image/no-milk.svg" alt="Не молоко"/>
+                        <img src="../assets/image/no-milk.svg" alt="Without milk"/>
                       </span>
-            <p class="checkbox__label">Не употребляю</p>
+            <p class="checkbox__label">I don't use</p>
           </label>
         </div>
       </b-step-item>
       <b-step-item step="4" :clickable="isStepsClickable">
         <div class="main__top">
-          <h3 class="main__header">Физическая активность</h3>
+          <h3 class="main__header">Physical activity</h3>
           <div class="header__steps">
             <span class="active-step">{{ activeStep + 1 }}</span>
             <span>/{{ totalItems }}</span>
           </div>
         </div>
-        <p class="main__question">Каков ваш регулярный уровень физической активности?</p>
+        <p class="main__question">What is your regular level of physical activity?</p>
         <div class="main__fields">
           <label class="checkbox-fields">
             <input id="option-physical-1" v-model="physicalModel" class="checkbox__input" type="radio" name="physical"
                    value="1.2"
                    @click="clickButtonNext"/>
-            <span class="checkbox__field">Почти полное отсутствие физической активности</span>
+            <span class="checkbox__field">Almost complete lack of physical activity</span>
           </label>
           <label class="checkbox-fields">
             <input id="option-physical-2" v-model="physicalModel" class="checkbox__input" type="radio" name="physical"
                    value="1.5"
                    @click="clickButtonNext"/>
-            <span class="checkbox__field">Я часто хожу гулять</span>
+            <span class="checkbox__field">I often go for a walk</span>
           </label>
           <label class="checkbox-fields">
             <input id="option-physical-3" v-model="physicalModel" class="checkbox__input" type="radio" name="physical"
                    value="1.5"
                    @click="clickButtonNext"/>
-            <span class="checkbox__field">Я занимаюсь спортом 1 - 2 раза в неделю</span>
+            <span class="checkbox__field">I exercise 1-2 times a week</span>
           </label>
           <label class="checkbox-fields">
             <input id="option-physical-4" v-model="physicalModel" class="checkbox__input" type="radio" name="physical"
                    value="1.7"
                    @click="clickButtonNext"/>
-            <span class="checkbox__field">Я занимаюсь спортом 3 - 5 раз в неделю</span>
+            <span class="checkbox__field">I exercise 3-5 times a week</span>
           </label>
           <label class="checkbox-fields">
             <input id="option-physical-5" v-model="physicalModel" class="checkbox__input" type="radio" name="physical"
                    value="1.9"
                    @click="clickButtonNext"/>
-            <span class="checkbox__field">Я занимаюсь спортом 5 - 7 раз в неделю</span>
+            <span class="checkbox__field">I exercise 5-7 times a week</span>
           </label>
         </div>
       </b-step-item>
       <b-step-item step="5" :clickable="isStepsClickable">
         <div class="main__top">
-          <h3 class="main__header">Ваш типичный день</h3>
+          <h3 class="main__header">Your typical day</h3>
           <div class="header__steps">
             <span class="active-step">{{ activeStep + 1 }}</span>
             <span>/{{ totalItems }}</span>
           </div>
         </div>
-        <p class="main__question">Опишите ваш типичный день</p>
+        <p class="main__question">Describe your typical day</p>
         <div class="main__fields">
           <label class="checkbox-fields">
             <input id="option-daily-1" v-model="dailyModel" class="checkbox__input" type="radio" name="daily"
-                   value="типичный день - 1" @click="clickButtonNext"/>
-            <span class="checkbox__field">В офисе</span>
+                   value="typical day - 1" @click="clickButtonNext"/>
+            <span class="checkbox__field">In the office</span>
           </label>
           <label class="checkbox-fields">
             <input id="option-daily-2" v-model="dailyModel" class="checkbox__input" type="radio" name="daily"
-                   value="типичный день - 2" @click="clickButtonNext"/>
-            <span class="checkbox__field">В офисе, но регулярно выхожу на улицу</span>
+                   value="typical day - 2" @click="clickButtonNext"/>
+            <span class="checkbox__field">In the office, but I go out regularly</span>
           </label>
           <label class="checkbox-fields">
             <input id="option-daily-3" v-model="dailyModel" class="checkbox__input" type="radio" name="daily"
-                   value="типичный день - 3" @click="clickButtonNext"/>
-            <span class="checkbox__field">Большую часть дня я хожу пешком</span>
+                   value="typical day - 3" @click="clickButtonNext"/>
+            <span class="checkbox__field">Most of the day I walk</span>
           </label>
           <label class="checkbox-fields">
             <input id="option-daily-4" v-model="dailyModel" class="checkbox__input" type="radio" name="daily"
-                   value="типичный день - 4" @click="clickButtonNext"/>
-            <span class="checkbox__field">Ручной труд</span>
+                   value="typical day- 4" @click="clickButtonNext"/>
+            <span class="checkbox__field">Manual labor</span>
           </label>
           <label class="checkbox-fields">
             <input id="option-daily-5" v-model="dailyModel" class="checkbox__input" type="radio" name="daily"
-                   value="типичный день - 5" @click="clickButtonNext"/>
-            <span class="checkbox__field">В основном я сижу дома</span>
+                   value="typical day - 5" @click="clickButtonNext"/>
+            <span class="checkbox__field">I mostly stay at home</span>
           </label>
         </div>
       </b-step-item>
       <b-step-item step="6" :clickable="isStepsClickable">
         <div class="main__top">
-          <h3 class="main__header">Параметры</h3>
+          <h3 class="main__header">Options</h3>
           <div class="header__steps">
             <span class="active-step">{{ activeStep + 1 }}</span>
             <span>/{{ totalItems }}</span>
           </div>
         </div>
-        <p class="main__question">Ваши данные</p>
+        <p class="main__question">Your data</p>
         <div class="main__fields">
           <label class="wrapper-input">
-            <input id="age" class="parameter-input" placeholder="Возраст" type="text" v-model="age"/>
+            <input id="age" class="parameter-input" placeholder="Age" type="text" v-model="age"/>
           </label>
           <span v-if="msg.age" class="message">{{ msg.age }}</span>
           <label class="wrapper-input">
-            <input id="height" class="parameter-input" type="text" placeholder="Рост" v-model="height"/>
+            <input id="height" class="parameter-input" type="text" placeholder="Height" v-model="height"/>
           </label>
           <span v-if="msg.height" class="message">{{ msg.height }}</span>
           <label class="wrapper-input">
-            <input id="weight" class="parameter-input" type="text" placeholder="Вес" v-model="weight" required/>
+            <input id="weight" class="parameter-input" type="text" placeholder="Weight" v-model="weight" required/>
           </label>
           <span v-if="msg.weight" class="message">{{ msg.weight }}</span>
           <label class="wrapper-input">
-            <input id="desiredWeight" class="parameter-input" type="text" placeholder="Желаемый вес"
+            <input id="desiredWeight" class="parameter-input" type="text" placeholder="Desired weight"
                    v-model="desiredWeight" required/>
           </label>
           <span v-if="msg.desiredWeight" class="message">{{ msg.desiredWeight }}</span>
           <button :disabled="fieldsFill" class="button button-orange btn-form" @click="clickButtonNext">
-            Дальше
+            Next
           </button>
         </div>
       </b-step-item>
       <b-step-item step="7" :clickable="isStepsClickable">
         <div class="main__top">
-          <h3 class="main__header">Бюджет</h3>
+          <h3 class="main__header">Budget</h3>
           <div class="header__steps">
             <span class="active-step">{{ activeStep + 1 }}</span>
             <span>/{{ totalItems }}</span>
           </div>
         </div>
-        <p class="main__question">Ваш месячный бюджет на рацион (₽)</p>
+        <p class="main__question">Your monthly dietary budget ($)</p>
         <div class="main__fields">
           <label class="checkbox-fields">
             <input id="option-budget-1" v-model="budgetModel" class="checkbox__input" type="radio" name="budget"
                    value="5000-7000" @click="clickButtonNext"/>
-            <span class="checkbox__field">5000-7000</span>
+            <span class="checkbox__field">100-300</span>
           </label>
           <label class="checkbox-fields">
             <input id="option-budget-2" v-model="budgetModel" class="checkbox__input" type="radio" name="budget"
                    value="7000-10000" @click="clickButtonNext"/>
-            <span class="checkbox__field">7000-10000</span>
+            <span class="checkbox__field">400-600</span>
           </label>
           <label class="checkbox-fields">
             <input id="option-budget-3" v-model="budgetModel" class="checkbox__input" type="radio" name="budget"
                    value="10000-15000" @click="clickButtonNext"/>
-            <span class="checkbox__field">10000-15000</span>
+            <span class="checkbox__field">700-900</span>
           </label>
           <label class="checkbox-fields">
             <input id="option-budget-4" v-model="budgetModel" class="checkbox__input" type="radio" name="budget"
                    value="15000-30000" @click="clickButtonNext"/>
-            <span class="checkbox__field">15000-30000</span>
+            <span class="checkbox__field">1000-1200</span>
           </label>
           <label class="checkbox-fields">
             <input id="option-budget-5" v-model="budgetModel" class="checkbox__input" type="radio" name="budget"
                    value="30000+" @click="clickButtonNext"/>
-            <span class="checkbox__field">30000+</span>
+            <span class="checkbox__field">1300+</span>
           </label>
         </div>
       </b-step-item>
             <b-step-item step="8" :clickable="isStepsClickable">
               <div class="main__top">
-                <h3 class="main__header">Приготовление</h3>
+                <h3 class="main__header">Cooking</h3>
                 <div class="header__steps">
                   <span class="active-step">{{ activeStep + 1 }}</span>
                   <span>/{{ totalItems }}</span>
                 </div>
               </div>
-              <p class="main__question">Время на готовку</p>
+              <p class="main__question">Cooking time</p>
               <div class="main__fields">
                 <label class="checkbox-fields">
-                  <input id="option-cooking-1" v-model="cookingModel" class="checkbox__input" type="radio" name="cooking" value="15-30 мин." @click="clickButtonNext"/>
-                  <span class="checkbox__field">15-30 мин. в день</span>
+                  <input id="option-cooking-1" v-model="cookingModel" class="checkbox__input" type="radio" name="cooking" value="15-30 min." @click="clickButtonNext"/>
+                  <span class="checkbox__field">15-30 min. in a day</span>
                 </label>
                 <label class="checkbox-fields">
-                  <input id="option-cooking-2" v-model="cookingModel" class="checkbox__input" type="radio" name="cooking" value="30-60 мин." @click="clickButtonNext"/>
-                  <span class="checkbox__field">30-60 мин. в день</span>
+                  <input id="option-cooking-2" v-model="cookingModel" class="checkbox__input" type="radio" name="cooking" value="30-60 min." @click="clickButtonNext"/>
+                  <span class="checkbox__field">30-60 min. in a day</span>
                 </label>
                 <label class="checkbox-fields">
-                  <input id="option-cooking-3" v-model="cookingModel" class="checkbox__input" type="radio" name="cooking" value="1-2 ч." @click="clickButtonNext"/>
-                  <span class="checkbox__field">1-2 ч. в день</span>
+                  <input id="option-cooking-3" v-model="cookingModel" class="checkbox__input" type="radio" name="cooking" value="1-2 h." @click="clickButtonNext"/>
+                  <span class="checkbox__field">1-2 hours a day</span>
                 </label>
               </div>
             </b-step-item>
@@ -272,14 +272,14 @@
           <div class="weight-grid__inner"></div>
           <div class="weight-grid__inner"></div>
           <span class="weight-grid__value">{{weight}} кг</span>
-          <span class="weight-grid__title">Желаемый<br/>вес</span>
+          <span class="weight-grid__title">Desired<br/>weight</span>
           <picture class="weight-grid__line">
             <source media="(max-width: 639px)" srcset="../assets/image/road-line-mobile.svg" alt="Линия">
             <img src="../assets/image/road-line.svg" alt="Линия"/>
           </picture>
         </div>
-        <p class="main__question">Создание вашего плана</p>
-        <h3 class="main__header" style="margin: 25px auto 0;max-width: 506px;">Хорошо питайтесь, развлекайтесь,<br/>выглядите потрясающе</h3>
+        <p class="main__question">Creating your plan</p>
+        <h3 class="main__header" style="margin: 25px auto 0;max-width: 506px;">Eat well, have fun, look amazing</h3>
         <div id="app">
           <div class="container">
             <div class="loading-bar">
@@ -290,61 +290,61 @@
         </div>
       </b-step-item>
       <b-step-item step="10" :clickable="isStepsClickable">
-        <p class="main__question">Резюме вашего профиля</p>
+        <p class="main__question">Summary of your profile</p>
         <div class="resume main">
           <div class="resume__wrapper">
-            <h3 class="main__header" style="margin-bottom: 40px">Резюме вашего профиля</h3>
+            <h3 class="main__header" style="margin-bottom: 40px">Summary of your profile</h3>
             <button class="button button-orange btn-form" style="width:100%; margin-bottom: 40px" >
-              Получить прямо сейчас
+              Get it now
             </button>
             <div class="content__wrap">
               <div class="content__item">
-                <h3 class="content__title">Ваш ИМТ</h3>
+                <h3 class="content__title">Your BMI</h3>
                 <picture class="content__img">
                   <span class="content__amount">{{ bmi.toFixed(2) }}</span>
-                  <img src="../assets/image/icon-imt.svg" alt="График ИМТ"/>
+                  <img src="../assets/image/icon-imt.svg" alt="Graphic BMI"/>
                 </picture>
                 <p class="content__value">{{bmiText}}</p>
               </div>
               <div class="content__item">
-                <h3 class="content__title">Метаболический возраст</h3>
+                <h3 class="content__title">Metabolic age</h3>
                 <div class="content__img">
                   <picture class="content__img" :class="{'--current-icon':metabolicAge<25}">
-                    <img src="../assets/image/icon-age-young.svg" alt="Молодой" class="--default-icon"/>
+                    <img src="../assets/image/icon-age-young.svg" alt="Young" class="--default-icon"/>
                   </picture>
                   <picture class="content__img" :class="{'--current-icon':metabolicAge>25}">
-                    <img src="../assets/image/icon-age-default.svg" alt="Средний" class="--default-icon"/>
+                    <img src="../assets/image/icon-age-default.svg" alt="Middle" class="--default-icon"/>
                   </picture>
                   <picture class="content__img" :class="{'--current-icon':metabolicAge>45}">
-                    <img src="../assets/image/icon-age-old.svg" alt="Взрослый" class="--default-icon"/>
+                    <img src="../assets/image/icon-age-old.svg" alt="Old" class="--default-icon"/>
                   </picture>
                 </div>
                 <p class="content__value">{{metabolicAge}}</p>
               </div>
               <div class="content__item">
-                <h3 class="content__title">Рекомендуемое количество калорий</h3>
+                <h3 class="content__title">Recommended calories</h3>
                 <picture class="content__img">
-                  <img src="../assets/image/icon-calories.svg" alt="Калькулятор калорий"/>
+                  <img src="../assets/image/icon-calories.svg" alt="Calorie calculator"/>
                 </picture>
                 <p class="content__value">{{ calcCalories(genderModel, age, weight, height, physicalModel) }}</p>
               </div>
               <div class="content__item">
-                <h3 class="content__title">Рекомендуемое количество воды</h3>
+                <h3 class="content__title">Recommended amount of water</h3>
                 <picture class="content__img">
-                  <img src="../assets/image/icon-water.svg" alt="Вода"/>
+                  <img src="../assets/image/icon-water.svg" alt="Water"/>
                 </picture>
                 <p class="content__value">{{ calcLiters(weight) }}</p>
               </div>
               <div class="content__item">
-                <h3 class="content__title">Похудение в зонах</h3>
+                <h3 class="content__title">Slimming in zones</h3>
                 <picture class="content__img">
-                  <img src="../assets/image/icon-weight-loss.svg" alt="Зоны похудения"/>
+                  <img src="../assets/image/icon-weight-loss.svg" alt="Slimming zones"/>
                 </picture>
               </div>
               <div class="content__item">
-                <h3 class="content__title">Достижимый вес после 28 дней диеты</h3>
+                <h3 class="content__title">Permissible weight after a month of diet</h3>
                 <picture class="content__img">
-                  <img src="../assets/image/icon-weight.svg" alt="Весы"/>
+                  <img src="../assets/image/icon-weight.svg" alt="Scales"/>
                 </picture>
                 <p class="content__value">{{calcWeight(weight, desiredWeight)}} кг</p>
               </div>
@@ -367,7 +367,7 @@
         </b-button>
       </template>
     </b-steps>
-    <b-button v-if="activeStep>0 && activeStep<8" class="main__bottom button-back" icon-left="arrow-left" @click="clickButtonBack">назад
+    <b-button v-if="activeStep>0 && activeStep<8" class="main__bottom button-back" icon-left="arrow-left" @click="clickButtonBack">back
     </b-button>
   </section>
 </template>
@@ -494,36 +494,36 @@ export default {
       const heightM = height*0.01;
       this.bmi = weight/(heightM*heightM).toFixed(2);
       if(this.bmi<18){
-        this.bmiText = 'Дефицит массы тела';
+        this.bmiText = 'Underweight';
       } else if(this.bmi<25){
-        this.bmiText = 'Нормально';
+        this.bmiText = 'Normal weight';
       } else if(this.bmi<30){
-        this.bmiText = 'Избыточная масса тела';
+        this.bmiText = 'Overweight';
       } else if(this.bmi<35){
-        this.bmiText = 'Ожирение 1-й степени';
+        this.bmiText = 'Obesity 1st degree';
       } else if(this.bmi<40){
-        this.bmiText = 'Ожирение 2-й степени';
+        this.bmiText = 'Obesity 2st degree';
       } else if(this.bmi>40){
-        this.bmiText = 'Ожирение 3-й степени';
+        this.bmiText = 'Obesity 3st degree';
       }
       return this.bmi;
     },
     calcLiters(weight){
       if(weight<50){
-        return "2 литра";
+        return "2 liters";
       } else if (weight<60) {
-        return "3 литра";
+        return "3 liters";
       } else if (weight<70) {
-        return "3.5 литра";
+        return "3.5 liters";
       } else if (weight<90) {
-        return "4 литра";
+        return "4 liters";
       } else if (weight>90) {
-        return "5 литров";
+        return "5 liters";
       }
     },
     calcCalories(genderModel, age, weight, height, physical){
       let calories = 0;
-      if(genderModel === "женский"){
+      if(genderModel === "female"){
         calories = (9.99*weight + 6.25*height - 4.92*age - 161) * physical;
       } else {
         calories = (9.99*weight + 6.25*height - 4.92*age + 5) * physical;
@@ -576,13 +576,13 @@ export default {
         this.msg.age = '';
         this.isAge = false;
       } else if (!/^\d+$/.test(value)) {
-        this.msg.age = 'Поле должно содержать только цифры.';
+        this.msg.age = 'The field must contain only numbers.';
         this.isAge = false;
       } else if (value < 12) {
-        this.msg.age = 'Возраст должен быть от 12 лет.';
+        this.msg.age = 'Age must be over 12 years old.';
         this.isAge = false;
       } else if (value > 90) {
-        this.msg.age = 'Возраст должен быть до 90 лет.';
+        this.msg.age = 'Age must be under 90 years old.';
         this.isAge = false;
       } else {
         this.msg.age = '';
@@ -594,11 +594,11 @@ export default {
       if (value === "") {
         this.msg.height = '';
       } else if (!/^\d+$/.test(value)) {
-        this.msg.height = 'Поле должно содержать только цифры.';
+        this.msg.height = 'The field must contain only numbers.';
       } else if (value < 120) {
-        this.msg.height = 'Рост должен быть от 120 см.';
+        this.msg.height = 'Height must be from 120 cm.';
       } else if (value > 220) {
-        this.msg.height = 'Возраст должен быть до 220 см.';
+        this.msg.height = 'Height must be up to 220 cm.';
       } else {
         this.msg.height = '';
         this.isHeight = true;
@@ -609,11 +609,11 @@ export default {
       if (value === "") {
         this.msg.weight = '';
       } else if (!/^\d+$/.test(value)) {
-        this.msg.weight = 'Поле должно содержать только цифры.';
+        this.msg.weight = 'The field must contain only numbers.';
       } else if (value < 40) {
-        this.msg.weight = 'Вес должен быть от 40 кг.';
+        this.msg.weight = 'Weight must be over 40 kg.';
       } else if (value > 150) {
-        this.msg.weight = 'Возраст должен быть до 150 кг.';
+        this.msg.weight = 'Weight must be up to 150 kg.';
       } else {
         this.msg.weight = '';
         this.isWeight = true;
@@ -624,11 +624,11 @@ export default {
       if (value === "") {
         this.msg.desiredWeight = '';
       } else if (!/^\d+$/.test(value)) {
-        this.msg.desiredWeight = 'Поле должно содержать только цифры.';
+        this.msg.desiredWeight = 'The field must contain only numbers.';
       } else if (value < 40) {
-        this.msg.desiredWeight = 'Вес должен быть от 40 кг.';
+        this.msg.desiredWeight = 'Weight must be over 40 kg.';
       } else if (value > 150) {
-        this.msg.desiredWeight = 'Возраст должен быть до 150 кг.';
+        this.msg.desiredWeight = 'Weight must be up to 150 kg.';
       } else {
         this.msg.desiredWeight = '';
         this.isDesiredWeight = true;

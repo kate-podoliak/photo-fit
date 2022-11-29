@@ -1,10 +1,10 @@
 <template>
   <div id="header" class="header">
     <div class="header__img">
-      <router-link to="/"><img src="../assets/image/logotype.png" alt="Логотип" width="90" height="90"/></router-link>
+      <router-link to="/"><img src="../assets/image/logotype.png" alt="Logotype" width="90" height="90"/></router-link>
     </div>
     <div id="header-text" class="header__text" >
-      <p>Пройди наш тест и узнай, какой способ похудения поможет тебе избавиться от пары лишних килограммов.</p>
+      <p>Take our test and find out the characteristics of your body!</p>
     </div>
   </div>
 </template>

@@ -14,13 +14,13 @@
                 role="button"
                 aria-controls="contentIdForA11y2"
                 :aria-expanded="isOpen">
-              <p class="footer__show" :class="{ hide: show }" @click="show = !show">О сервисе</p>
+              <p class="footer__show" :class="{ hide: show }" @click="show = !show">About service</p>
             </div>
           </template>
             <div class="footer__content">
               <div class="footer__payment">
-                <p style="font-weight: bold;">zdorovo.io © 2022</p>
-                <p style="color: #4e4e4e; opacity: .5;">Все права защищены</p>
+                <p style="font-weight: bold;">photofit © 2022</p>
+                <p style="color: #4e4e4e; opacity: .5;">All rights reserved</p>
                 <div class="payments">
                   <div class="payment"><img src="../assets/image/icon-visa.png" alt="Visa"/></div>
                   <div class="payment"><img src="../assets/image/icon-mastercard.png" alt="Mastercard"/></div>
@@ -29,17 +29,14 @@
                 </div>
               </div>
               <ul class="footer__menu">
-                <li><router-link to="/unsubscribe">Отменить подписку</router-link></li>
-                <li><a href="./pdf/privacy-policy.pdf">Политика обработки персональных данных</a></li>
-                <li><a href="./pdf/terms.pdf">Пользовательское соглашение</a></li>
-                <li><a href="./pdf/tarifes.pdf">Тарифы</a></li>
+                <li><router-link to="/unsubscribe">Cancel subscription</router-link></li>
+                <li><a href="#">Personal data processing policy</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Tariffs</a></li>
               </ul>
               <div class="footer__info">
-                <p><noindex>ИП Кокарев Д.А.</noindex></p>
-                <p><noindex>ИНН: 370255076376</noindex></p>
-                <p><noindex>ОГРНИП: 321370200014024</noindex></p>
-                <p><a href='mailto:support@zdorovo.io' style="font-weight: bold;">support@zdorovo.io </a>- поддержка</p>
-                <p><a href='mailto:ceo@zdorovo.io' style="font-weight: bold;">ceo@zdorovo.io </a>- сотрудничество</p>
+                <p><a href='mailto:support@support' style="font-weight: bold;">support </a>- support</p>
+                <p><a href='mailto:ceo@ceo' style="font-weight: bold;">ceo@ceo </a>- cooperation</p>
               </div>
             </div>
         </b-collapse>
@@ -74,7 +71,7 @@ export default {
 }
 
 .footer__wrapper {
-  padding: 10px 15px;
+  padding: 0px 15px;
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
